@@ -1,46 +1,137 @@
-# Getting Started with Create React App
+# EduConnect
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Colaboradores
 
-## Available Scripts
+* Marco Antonio Chacón Yépez
+* Alex Patricio Quishpe Salgado
 
-In the project directory, you can run:
+## Descripción
+EduConnect es una plataforma de red social académica diseñada para conectar estudiantes y docentes. Ofrece un espacio donde la comunidad educativa puede colaborar, compartir conocimientos y desarrollar relaciones académicas significativas. EduConnect permite la creación y gestión de publicaciones y comentarios, facilitando la comunicación y el intercambio de ideas en un entorno seguro y estructurado.
 
-### `npm start`
+## Características
+Gestión de Publicaciones: Los usuarios pueden crear y gestionar publicaciones con títulos, descripciones y contenido adicional.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Gestión de Comentarios: Los usuarios pueden comentar en publicaciones, fomentando el diálogo y la colaboración.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Gestión de Usuarios: Los administradores pueden gestionar la lista de usuarios registrados, incluyendo la eliminación de usuarios.
 
-### `npm test`
+Persistencia de Datos: Utiliza localStorage para almacenar publicaciones y comentarios, asegurando que los datos persistan entre sesiones.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos mínimos
+Node.js versión 14 en adelante
 
-### `npm run build`
+npm versión 6 en adelante
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React versión 17 en adelante
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Material UI versión 5 en adelante
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalación
 
-### `npm run eject`
+Ejcutamos los siguientes comando en cmd o la terminal de PowerShell:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Clonamos el repositorio:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone https://github.com/mc4589/educonnect.git
+Navega al directorio del proyecto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Navegamos a la carpeta del proyecto
+cd educonnect
+Instala las dependencias:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Instalamos dependencias de react:
 
-## Learn More
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ejecución para iniciar el servidor de desarrollo:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+npm start
+Abre http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
+
+## Estructura del Proyecto
+src/
+
+components/: Componentes reutilizables de la interfaz de usuario.
+
+context/: Contextos de React para gestionar el estado global.
+
+pages/: Páginas principales de la aplicación.
+
+Inicio.tsx: Página de bienvenida.
+
+AcercaDe.tsx: Página de información sobre el proyecto.
+
+Publicaciones.tsx: Página de gestión de publicaciones.
+
+Admin.tsx: Página de administración.
+
+services/: Servicios para interactuar con localStorage.
+
+types/: Definiciones de tipos TypeScript.
+
+App.css: Archivo de estilos globales.
+
+App.tsx: Componente principal de la aplicación.
+
+index.tsx: Punto de entrada de la aplicación.
+
+## Uso de la aplicación
+
+### Inicio de sesión
+
+Ejecutar el proyecto con localhost:3000
+
+Registrarse como usuario o como publicador en la venta de autenticación
+
+Hacer click en guardar
+
+Iniciar sesión con las credenciales almacenadas.
+
+### Credenciales para probar la aplicación
+
+Publicadores:
+usuario: usuario1    contraseña: 1234
+usuario: usuario2    contraseña: 1234
+usuario: usuario3    contraseña: 1234
+usuario: usuario4    contraseña: 1234
+usuario: usuario5    contraseña: 1234
+
+Administradores:
+usuario: administrador1 contraseña: 1234
+
+### Roles de publicador
+
+Agregar publicaciones
+Agregar comentarios
+
+### Roles del administrador
+
+Eliminar usuarios 
+Eliminar publicaciones
+Eliminar comentarios
+
+En la interfaz de la aplicación para administradores aparece la subpágina Admin.
+
+
+### Gestión de Publicaciones
+Navegamos a la página de Publicaciones.
+
+Completar el formulario para añadir una nueva publicación.
+
+Hacer clic en "Añadir Publicación".
+
+### Gestión de Comentarios
+Navegar a una publicación específica.
+
+Completar el campo para añadir un comentario.
+
+Hacer clic en "Publicar".
+
+### Gestión de Usuarios (Admin)
+Navegar a la página de Administración.
+
+Revisar la lista de usuarios registrados.
+
+Usar el botón "Eliminar" para borrar un usuario.
+
