@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos para centrar el contenido */
+.centered-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh; 
+  text-align: center; 
+}
+
+/* Estilos para el contenedor de administración */
+.admin-container {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 16px;
+}
+
+/* Estilos para el contenedor de usuarios */
+.users-container {
+  border: 2px solid black;
+  padding: 16px;
+}
+
+/* Estilos para los contenedores de publicaciones individuales */
+.publicaciones-container {
+  margin-bottom: 16px;
+  border: 2px solid black;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para el divisor en las publicaciones */
+.publicaciones-divider {
+  margin-top: 16px;
+}
+
+/* Estilos para el texto de los ítems de la lista */
+.list-item-text {
+  margin-right: 16px;
+}
+
+/* Estilos para los ítems de los comentarios */
+.comment-item {
+  margin-left: 16px;
+}
+
+/* Estilos para el formulario de publicación */
+.form-container {
+  margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de publicaciones */
+.posts-container {
+  margin-top: 20px;
+}
+
+/* Estilos para el encabezado de comentarios */
+.comments-heading {
+  margin-top: 16px;
+}
+
+/* Estilos para los botones */
+.button-nowrap {
+  white-space: nowrap;
+  padding: 8px 16px; 
+}
+
+/* Estilos para el botón de Añadir Publicación */
+.add-post-button {
+  margin-top: 16px;
+}
+
+/* Estilos para el botón de Eliminar Publicación y Eliminar Comentario */
+.delete-post-button {
+  background-color: #f44336; 
   color: white;
+  min-width: 200px; 
+  padding: 8px 16px; 
+  margin-left: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-comment-button {
+  background-color: #2196f3; 
+  color: white;
+  min-width: 200px; 
+  padding: 8px 16px; 
+  margin-left: 16px;
 }
